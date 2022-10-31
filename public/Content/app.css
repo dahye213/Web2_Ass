@@ -26,10 +26,12 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
 
-#home_title, #about_title, #projects_title, #services_title, #contact_title, #business_title, #login_title{
+#home_title, #about_title, #projects_title, #services_title, #contact_title, #login_title{
     font-weight: bold;
 }
- 
+.business_title{
+    font-weight: bold;
+}
  #home_content{
     width: 800px;
     margin-left: auto;

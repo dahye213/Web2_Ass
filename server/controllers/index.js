@@ -16,7 +16,7 @@ module.exports.displayHomepage = (req, res, next) => {
 
 module.exports.displayaboutpage = (req, res, next) => {
   res.render("index", {
-    title: "About Me",
+    title: "About",
     displayName: req.user ? req.user.displayName : "",
   });
 };
@@ -34,14 +34,12 @@ module.exports.displayservicespage = (req, res, next) => {
     displayName: req.user ? req.user.displayName : "",
   });
 };
-
-module.exports.displaycontactmepage = (req, res, next) => {
-    res.render("index", {
-      title: "Contact Me",
-      displayName: req.user ? req.user.displayName : "",
-    });
-  };
-  
+module.exports.displaycontactpage = (req, res, next) => {
+  res.render("index", {
+    title: "Contact Me",
+    displayName: req.user ? req.user.displayName : "",
+  });
+};
 
 module.exports.displayLoginPage = (req, res, next) => {
   // check if the user is already logged in
