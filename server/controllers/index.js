@@ -16,7 +16,7 @@ module.exports.displayHomepage = (req, res, next) => {
 
 module.exports.displayaboutpage = (req, res, next) => {
   res.render("index", {
-    title: "About",
+    title: "About Me",
     displayName: req.user ? req.user.displayName : "",
   });
 };
