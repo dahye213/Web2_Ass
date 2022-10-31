@@ -3,21 +3,19 @@ let router = express.Router();
 let mongoose = require("mongoose");
 const business_contact = require("../models/business_contact");
 
-
-
 module.exports.displaybusinessList = (req, res, next) => {
   business_contact.find((err, business_List) => {
     if (err) {
       return console.error(err);
     } else {
-      //console.log(bookList);
+      //console.log(business_List);
 
       res.render("business_contact/list", {
         title: "Business contact",
         Business_List: business_List,
         displayName: req.user ? req.user.displayName : "",
       });
-      //brender book.ejs and pass title and Booklist variable we are passing bookList object to BookList property
+      //render list.ejs and pass title and Business_List variable we are passing business_List object to Business_List property
     }
   });
 };
@@ -80,7 +78,7 @@ module.exports.processingeditpage = (req, res, next) => {
       console.log(err);
       res.end(err);
     } else {
-      //refresh the book list
+      //refresh the Business ListZ
       res.redirect("/contact-list");
     }
   });
@@ -93,7 +91,7 @@ module.exports.deletepage = (req, res, next) => {
       console.log(err);
       res.end(err);
     } else {
-      //refresh book list
+      //refresh  Business ListZ
       res.redirect("/contact-list");
     }
   });
