@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{B919A63D-25C3-49AF-A5C2-D7A51C7EB148}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment4/Assignment4.html">
+    <Files>
+      <File FileName="Assignment4/Assignment4.html" Line="106" Column="56" />
+      <File FileName="Assignment4/Assignment4.js" />
+      <File FileName="Assignment4/bootstrap.min" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Assignment4" expanded="True">
+            <Node name="Assignment4" expanded="True">
+              <Node name="Assignment4.html" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assignment4 FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

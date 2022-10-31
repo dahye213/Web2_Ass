@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>COMP125 - Assignment4 - Dahye Lee</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Assignment4.css" />
+</head>
+<body>
+    <div id="allPage">
+        <div id="nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </div>
+        <div id="formDiv">
+            <h3>Member Registration</h3>
+            <p>Please complete all the fields below:</p>
+            <hr />
+            <div>
+                <form id="form" action="mailto:dlee220@my.centennialcollege.ca" method="post">
+                    <table>
+                        <tr>
+                            <td class="errStar"><div></div></td>
+                            <td><div class="errDt"></div><label for="fname">First Name: </label></td>
+                            <td><input id="fname" name="fname" type="text" class="form-control form-control-sm" /></td>
+                        </tr>
+
+                        <tr>
+                            <td class="errStar"><div></div></td>
+                            <td><div class="errDt"></div><label for="lname">Last Name:</label></td>
+                            <td><input id="lname" type="text" class="form-control form-control-sm" /></td>
+                        </tr>
+                        <tr>
+                            <td class="errStar"><div></div></td>
+                            <td><div class="errDt"></div><label for="address">Address: </label></td>
+                            <td><input id="address" type="text" class="form-control form-control-sm" /></td>
+                        </tr>
+                        <tr>
+                            <td class="errStar"><div></div></td>
+                            <td><div class="errDt"></div><label for="city">City: </label></td>
+                            <td><input id="city" type="text" class="form-control form-control-sm" /></td>
+                        </tr>
+                        <tr>
+                            <td class="errStar"><div></div></td>
+                            <td><div class="errDt"></div><label for="code">Postal Code: </label></td>
+                            <td><input id="code" type="text" class="form-control form-control-sm" /></td>
+                        </tr>
+                        <tr>
+                            <td class="errStar"><div></div></td>
+                            <td><div class="errDt"></div><label for="province">Province: </label></td>
+                            <td>
+                                <select id="province" class="form-control form-control-sm">
+                                    <option disabled selected value="">Select Province</option>
+                                    <option>QC</option>
+                                    <option>ON</option>
+                                    <option>MN</option>
+                                    <option>SK</option>
+                                    <option>AB</option>
+                                    <option>BC</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="errStar"><div></div></td>
+                            <td><div class="errDt"></div><label for="age">Age: </label></td>
+                            <td><input id="age" type="number" class="form-control form-control-sm" min="18" /></td>
+                        </tr>
+                        <tr>
+                            <td class="errStar"><div></div></td>
+                            <td><div class="errDt"></div><label for="psw">Password: </label></td>
+                            <td><input id="psw" type="password" class="form-control form-control-sm" /></td>
+                        </tr>
+                        <tr>
+                            <td class="errStar"><div></div></td>
+                            <td><div class="errDt"></div><label for="confirmpsw">Confirm Password:</label></td>
+                            <td><input id="confirmpsw" type="password" class="form-control form-control-sm" /></td>
+                        </tr>
+                        <tr>
+                            <td class="errStar"><div></div></td>
+                            <td><div class="errDt"></div><label for="email">Email: </label></td>
+                            <td><input id="email" type="email" class="form-control form-control-sm" /></td>
+                        </tr>
+                    </table>
+                    <div id="submitForm">
+                        <input id="submitBtn" type="button" class="btn btn-info" value="Register Now" />
+                        <input id="clearBtn" type="button" class="btn btn-info" value="Clear Form" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="accountDiv">
+            <h3>Congrats!</h3>
+            <img id="checkmark" src="images/checkmark.png" />
+            <p>Thanks for registering with our website,<br />your customer record was created successfully.</p>
+            <hr />
+            <h5>Your profile</h5>
+            <div>
+                <table>
+                    <tr>
+                        <td><div>First Name: </div></td>
+                        <td><div class="info"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div>Last Name: </div></td>
+                        <td><div class="info"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div>Address: </div></td>
+                        <td><div class="info"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div>Age: </div></td>
+                        <td><div class="info"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div>Email: </div></td>
+                        <td><div class="info"></div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="footer">
+            <footer>&copy;&nbsp;Copyright Dahye Lee COMP125 - Assignment 4 - Winter 2022</footer>
+        </div>
+    </div>
+    <script src="Assignment4.js"></script>
+</body>
+</html>

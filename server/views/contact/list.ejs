@@ -1,0 +1,56 @@
+<%- include ('../partials/header.ejs')%>
+<%- include ('../partials/main_nav.ejs')%>
+
+<!-- Main Content -->
+
+<main class="contianer">
+<section id="business">
+    <div class="row">
+        <div class="offset-md-1 col-md-10">
+            <h1 class="business_title"><%= title%></h1>
+            <a href="/contact-list/add" class="btn btn-primary" role="button">
+                <i class="fas fa-plus-circle"></i> Add a Contact
+            </a>
+            <br>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                    <!--Header Row-->
+                        <tr class="d-flex">
+                            <th class="text-center col-2">Name</th>
+                            <th class="text-center col-3">Contact Number</th>
+                            <th class="text-center col-5">Email</th>
+                            <th class="text-center col-1"></th>
+                            <th class="text-center col-1"></th>
+                        </tr>
+                    </thead>
+                    <!-- Repeatable Template Row -->
+                    <tbody>
+                    <% for(let count = 0; count < contacts.length; count++){ %>
+                        <tr class="d-flex">
+                            <td class="text-center col-2"><%= contacts[count].name %></td>
+                            <td class="text-center col-3"><%= contacts[count].number %></td>
+                            <td class="text-center col-5"><%= contacts[count].email %></td>
+                            <td class="text-center col-1">
+                                <a href="/contact-list/edit/<%= contacts[count]._id%>" class="btn btn-primary btn-sm">
+                                <i class="fas fa-pencil-alt"></i>Edit
+                                </a>
+                            </td>
+                            <td class="text-center col-1">
+                                <a href="/contact-list/delete/<%= contacts[count]._id%>" class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash-alt"></i>Delete</a>
+                            </td>
+                        </tr>
+                    <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<!--HTML bottom navigation part-->
+<%- include ('../partials/bottom_nav.ejs')%>
+<!--HTML Footer part-->
+<%- include ('../partials/footer.ejs')%>

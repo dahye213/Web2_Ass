@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment1</title>
+    <link rel="stylesheet" href="assignment1.css" type="text/css" />
+</head>
+<body>
+
+    <p id="header">BMR Calculator</p>
+ 
+    <div id="container">
+        <div id="tabs">
+            <div id="imperialHead" class="tab_current" onclick="tab(event, 'imperial')">IMPERIAL BMR CALCULATOR</div>
+            <div id="metricHead" class="tab" onclick="tab(event,'metric')">METRIC BMR CALCULATOR</div>
+        </div>
+        <div id="form">
+            <div id="imperial" class="tabcontent">
+                <table>
+                    <tr class="odd">
+                        <td><label for="gender">GENDER</label></td>
+                        <td colspan="3">
+                            <select id="genderI" name="gender" class="form-control form-control-sm">
+                                <option id="female" value="female">Female</option>
+                                <option id="male" value="male">Male</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td><label for="age">AGE</label></td>
+                        <td colspan="3"><input type="number" id="ageI" name="age" class="form-control form-control-sm" min="0" value="0"></td>
+                    </tr>
+                    <tr class="odd">
+                        <td colspan="4"><p>YOUR HEIGHT</p></td>                 
+                    </tr>
+                    <tr class="even">
+                        <td><label for="feet">FEET</label></td>
+                        <td><input type="number" id="feet" name="height" class="form-control form-control-sm" min="0" value="0" /></td>
+                        <td><label for="inches">INCHES</label></td>
+                        <td><input type="number" id="inches" class="form-control form-control-sm" name="height" min="0" value="0" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <td colspan="4"><label for="weight">YOUR WEIGHT</label></td>
+                    </tr>
+                    <tr class="even">
+                        <td><label for="stones">STONES</label>
+                        <td><input type="number" id="stones" name="weight" class="form-control form-control-sm" min="0" value="0" /></td>
+                        <td><label for="pounds">POUNDS</label></td>
+                        <td><input type="number" id="pounds" name="weight" class="form-control form-control-sm" min="0" value="0" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="metric" class="tabcontent">
+                <table>
+                    <tr class="odd">
+                        <td><label for="gender">GENDER</label></td>
+                        <td>
+                            <select id="genderM" name="gender">
+                                <option id="female" class="form-control form-control-sm" value="female">Female</option>
+                                <option id="male" class="form-control form-control-sm" value="male">Male</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td><label for="age">AGE</label></td>
+                        <td><input type="number" id="ageM" name="age" class="form-control form-control-sm" min="0" value="0"></td>
+                    </tr>
+                    <tr class="odd">
+                        <td><label for="height">HEIGHT</label></td>
+                        <td><input type="number" id="cm" name="height" class="form-control form-control-sm" min="0" value="0" />&nbsp;cm</td>
+                    </tr>
+                    <tr class="even">
+                        <td><label for="weight">WEIGHT</label></td>
+                        <td><input type="number" id="kg" name="weight" class="form-control form-control-sm" min="0" value="0" />&nbsp;kg</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="activityLevel">
+            <p id="activityHead"><b>Select your activity level:</b></p>
+            <form>
+                <input type="radio" value="1.2" name="activityLevel" id="activityLevel1"><span class="white">I am sedentary (little or no exercise)</span><br>
+                <input type="radio" value="1.375" name="activityLevel" id="activityLevel2"><span class="white">I am lightly active (light exercise or sports 1-3 days per week)</span><br>
+                <input type="radio" value="1.55" name="activityLevel" id="activityLevel3"><span class="white">I am moderately active (moderate exercise or sports 3-5 days per week)</span><br>
+                <input type="radio" value="1.725" name="activityLevel" id="activityLevel4"><span class="white">I am very active (hard exercise or sports 6-7 days per week)</span><br>
+                <input type="radio" value="1.9" name="activityLevel" id="activityLevel5"><span class="white">I am super active(very hard exercise or sports and physical job or 2x training)</span><br>
+            </form>
+        </div>
+        <input type="button" id="submit" value="Calcualte BMR" onclick="calBMR()" />
+    </div>
+    <div id="result">
+        <h3>BMR Result</h3>
+        <p id="bmr"></p>
+        <p id="calories"></p>
+    </div>
+    <footer>&copy;&nbsp;Copyright Dahye Lee - 301128334 - COMP125</footer>
+    <script src="assignment1.js"></script>
+</body>
+</html>

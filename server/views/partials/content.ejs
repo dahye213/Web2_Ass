@@ -1,0 +1,135 @@
+<!--Contents of 'Home' page-->
+<% if (title == "Home"){ %>  
+    <section id="home">
+        <h1 class="display-4 text-center" id="home_title">Welcome to my <%= title%> page</h1>
+    
+        <div id="home_content">
+            <p>
+                <h3><b>My missions are: </b></h3><br>
+                <ul>
+                    <li>To be a motive and creative programmer</li>
+                    <li>To have good time management skills</li>
+                    <li>To work well independently and also cooperatively within a team environment</li>
+                </ul>
+            </p>    
+        </div>
+    </section>
+    <% } %> 
+    
+    <!--Contents of 'About Me' page-->
+    <% if (title == "About Me"){ %>  
+        <section id="about">
+            <h1 class="display-4 text-center" id="about_title">Let's talk about me!</h1>
+            <img src="/Assets/images/IMG_1970.JPG" width="270px" height="360px" alt="me" id="me" >
+            <div id="aboutMe_content">
+                <p >
+                    Hello, My name is Dahye Lee from Seoul, South Korea. <br>
+                    I am currently in Software Engineering Technology program at Centennial College.<br>
+                    I would like to introduce my self as a creative and active person who enjoys new challenges!<Br>
+                    I am confident with my skills Object-oriented software design methodology, user-oriented interface design, C#, Java, Oracle, Ms-SQL Server, UNIX/Linux, HTML5/CSS/JavaScript<br>    
+                   <br><br>
+                    <a href="Assets/images/Dahye Lee_301128334_Resume_v1.pdf" id="resume">Resume</a>
+                </p >
+            </div>
+    
+        </section>
+        <% } %> 
+    
+    <!--Contents of 'Projects' page-->
+    <% if (title == "Projects"){ %>  
+        <section id="project">
+            <h1 class="display-4 text-center" id="projects_title">Academic Projects</h1>
+           
+            <div id="projects_content">
+                <div class="projectView">
+                    <a href= "/Assignment2/Assignment2/Assignment2.html">
+                    <img src="Assets/images/Portfolio1.png" class="pr"></a>
+                </div>
+                
+                <div class="projectView">
+                    <a href="/Assignment1/assignment1.html">
+                    <img src="Assets/images/Portfolio2.png" class="pr"></a>
+                </div>
+                <div class="projectView">
+                    <a href="/Assignment4/Assignment4/Assignment4.html">
+                    <img src="Assets/images/Portfolio3.png" class="pr"></a>
+                </div> 
+                <div class="projectView"><p><b>Drawing a Table</b><br>
+                    Using HTML/CSS and JavaScript, developed a program that draws row x column table</p>
+                </div>
+                <div class="projectView">
+                <p><B>BMR Calculator</B><br>
+                    Calculates BMR using data from the user entering</p>
+                </div>
+                <div class="projectView">
+                    <p><b>Member Registration webpage</b><br>
+                        Developed a website that interacts with server to send and receive user information to register the webpage</p></Td>
+                    
+                </div>
+            </div>
+        </section>
+    <% } %> 
+    
+    
+    <!--Contents of 'Services' page-->
+    <% if (title == "Services"){ %>  
+        <section id="service">
+            <h1 class="display-4 text-center" id="services_title">Services</h1>
+           
+            <div id="service_container">
+                <figure id="java">
+                    <img src="Assets/images/javaProgramming.jpeg" class="pr">
+                    <figcaption>Object-oriented programming using Java or C#</figcaption>
+                </figure>
+                <figure id="webDev">
+                    <img src="Assets/images/WebDevelopment.jpeg" class="pr">
+                    <figcaption>Web development using HTML/CSS, JavaScripts</figcaption>
+                </figure>
+                <figure id="DBManage">
+                    <img src="Assets/images/DBMS.png" class="pr">
+                    <figcaption>Database Management using Oracle and MySQL</figcaption>       
+                </figure>
+            </div>
+        </section>
+    <% } %> 
+    
+    <!--Contents of 'Contact Me' page-->
+    <% if (title == "Contact Me"){ %>  
+        <section id="contact">
+            <h1 class="display-4 text-center" id="contact_title">Contact Me!</h1>
+    
+           
+            <div id="contactInfo">
+                <form id="form" action="https://comp229-dahyelee.herokuapp.com/home" method="GET">
+                    <table>
+                        <tr>
+                            <td><div class="errDt"></div><label for="fname">First Name: </label></td>
+                            <td><input id="fname" name="fname" type="text"/></td>
+                        </tr>
+    
+                        <tr>
+                            <td><label for="lname">Last Name:</label></td>
+                            <td><input id="lname"name="lname" type="text"/></td>
+                        </tr>
+                        <tr>
+                            <td><div class="errDt"></div><label for="phoneNumber">Contact Number: </label></td>
+                            <td><input id="phoneNumber" name="phoneNumber" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><div class="errDt"></div><label for="email">email: </label></td>
+                            <td><input id="email" name="email" type="email"/></td>
+                        </tr>
+                        <tr>
+                            <td><div class="errDt"></div><label for="message">Message: </label></td>
+                            <td><textarea id="txtMessage" name="txtMessage"  cols="50" role="3"></textarea></td>
+                        </tr>
+                        
+                    </table>
+                    <div id="submitForm">
+                        <input id="submitBtn" type="submit" value="Register Now" />
+                        <input id="clearBtn" type="reset" value="Clear Form" />
+                    </div>
+                </form>
+            </div>
+        </section>
+    <% } %> 
