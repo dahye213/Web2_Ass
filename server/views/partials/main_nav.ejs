@@ -45,14 +45,6 @@
           <a class="nav-link" href="/contact-list"><i class="fas fa-gear"></i> Business Contact</a>
         </li>
 
-        <% if (title == "Contact Me"){ %>
-          <li class="nav-item active"></li>
-        <% } else { %> 
-          <li class="nav-item">
-        <% } %>
-          <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact Me</a>
-        </li>
-
         <% if(typeof displayName == 'string' && displayName) { %>
           <li class="nav-item"><a href="/logout" class="nav-link">
             <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>

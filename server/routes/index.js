@@ -18,9 +18,6 @@ router.get("/projects", indexController.displayprojectpage);
 /* GET Services page. */
 router.get("/services", indexController.displayservicespage);
 
-/* GET Contact Me page*/
-router.get("/contact", indexController.displaycontactpage);
-
 /* GET Route for displaying the Login page */
 router.get("/login", indexController.displayLoginPage);
 
