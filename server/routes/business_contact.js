@@ -19,7 +19,7 @@ function requireAuth(req, res, next) {
 }
 
 /* GET Route for the Book List page - READ Operation */
-router.get("/contact-list", business_contactController.displaybusinessList);
+router.get("/contact-list", requireAuth, business_contactController.displaybusinessList);
 
 /* GET Route for displaying the Add page - CREATE Operation */
 router.get("/contact-list/add", requireAuth, business_contactController.addpage);
